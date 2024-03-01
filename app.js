@@ -1,11 +1,40 @@
+
+
+function changeHamburgerBackground(){
+    const hamburger = document.querySelector(".hamburger-container")
+    let scrollValue = window.scrollY;
+    if(scrollValue > 800){
+        hamburger.style.backgroundColor = "black";
+    } else {
+        hamburger.style.backgroundColor = "transparent";
+    }
+}
+
+window.addEventListener('scroll', changeHamburgerBackground);
+
+
+//Click on hamburger and expand menu
 const hamburgerContainer = document.querySelector(".hamburger-container");
 const menuExpanded = document.querySelector(".menu-expanded")
 hamburgerContainer.addEventListener("click", () => {
     hamburgerContainer.classList.toggle("active");
     menuExpanded.classList.toggle("active");
-    // nav.style.color = "rgb(190, 190, 190)"
-    // xMark.style.opacity = "1";
+    hamburgerContainer.style.backgroundColor = "transparent"
 })
+
+//Click X to close menu
+const menuLinks = document.querySelectorAll(".menu-link");
+menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", ()=> {
+        hamburgerContainer.classList.toggle("active");
+        menuExpanded.classList.toggle("active");  
+    })
+})
+
+
+
+
+
 
 
 //Perennial and What We Know intersection for grayscale images

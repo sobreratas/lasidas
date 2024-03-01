@@ -72,20 +72,30 @@ hr.style-eight:after {
   width: 40px;
   transform: translateY(12px) rotate(45deg) translateX(0px);
   transition: transform 0.3s;
+  background-color: #000;
 }
 
 .hamburger-container.active .bar:nth-child(3) {
   width: 40px;
   transform: translateY(-13px) rotate(-45deg);
   transition: transform 0.3s;
+  background-color: #000;
 }
 
 /* MENU EXPANDED STYLES */
+.no-scroll {
+    overflow: hidden;
+}
 
 .menu-expanded {
   opacity: 0;
   height: 100vh;
   background-color: rgb(190, 190, 190);
+  background-image: url("images/menu-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +110,7 @@ hr.style-eight:after {
 }
 
 .menu-expanded.active {
-    z-index: 9999999;
+z-index: 9999999;
   opacity: 1;
 }
 
@@ -137,7 +147,7 @@ hr.style-eight:after {
 
 /*** HEADER STYLES ***/
 .header-section {
-  background-image: url("images/header-background.jpg");
+  background-image: url("images/header-background.png");
   background-color: rgba(0, 0, 0, 1);
   background-position: center;
   background-size: cover;

@@ -11,7 +11,7 @@ function changeHamburgerBackground(){
 }
 
 window.addEventListener('scroll', changeHamburgerBackground);
-
+const body = document.querySelector("body");
 
 //Click on hamburger and expand menu
 const hamburgerContainer = document.querySelector(".hamburger-container");
@@ -19,7 +19,8 @@ const menuExpanded = document.querySelector(".menu-expanded")
 hamburgerContainer.addEventListener("click", () => {
     hamburgerContainer.classList.toggle("active");
     menuExpanded.classList.toggle("active");
-    hamburgerContainer.style.backgroundColor = "transparent"
+    hamburgerContainer.style.backgroundColor = "transparent";
+    body.classList.toggle("no-scroll");
 })
 
 //Click X to close menu
@@ -27,7 +28,8 @@ const menuLinks = document.querySelectorAll(".menu-link");
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", ()=> {
         hamburgerContainer.classList.toggle("active");
-        menuExpanded.classList.toggle("active");  
+        menuExpanded.classList.toggle("active"); 
+        body.classList.toggle("no-scroll"); 
     })
 })
 

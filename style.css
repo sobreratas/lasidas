@@ -91,7 +91,7 @@ hr.style-eight:after {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999999;
+  z-index: -111;
   transition: opacity 0.3s ease-in;
 }
 
@@ -100,6 +100,7 @@ hr.style-eight:after {
 }
 
 .menu-expanded.active {
+    z-index: 9999999;
   opacity: 1;
 }
 

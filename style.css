@@ -193,6 +193,8 @@ z-index: 9999999;
   padding: 30px;
   gap: 20px;
   color: #fff;
+  opacity: 0;
+  transition: opacity .3s ease-in;
 }
 
 .album-year {
@@ -281,7 +283,7 @@ z-index: 9999999;
 }
 
 .half-screen img {
-  filter: brightness(65%);
+  filter: brightness(45%);
   width: 100%;
   height: 100%;
 }

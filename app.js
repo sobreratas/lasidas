@@ -33,7 +33,22 @@ menuLinks.forEach(menuLink => {
     })
 })
 
+const boxes = document.querySelectorAll(".box");
 
+const boxObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show"); // Add show class when intersected
+            boxObserver.unobserve(entry.target); // Stop observing once shown
+        }
+    });
+}, {
+    threshold: 0.5,
+});
+
+boxes.forEach(box => {
+    boxObserver.observe(box);
+});
 
 
 

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lora, "Times New Roman", Times, serif;
+  font-family: Cormorant Garamond, "Times New Roman", Times, serif;
 }
 
 body {
@@ -17,7 +17,7 @@ h1 {
 
 p,
 a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 hr.style-eight {
@@ -94,7 +94,6 @@ hr.style-eight:after {
 .menu-expanded {
   opacity: 0;
   height: 100vh;
-  background-color: rgb(190, 190, 190);
   background-image: url("images/menu-background.png");
   background-position: center;
   background-size: cover;
@@ -225,7 +224,7 @@ hr.style-eight:after {
 }
 
 .full-inner-box p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .full-inner-box {
@@ -621,7 +620,7 @@ footer {
 
   .perennial-container p,
   .what-we-know-container p {
-    font-size: 0.85rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -638,10 +637,18 @@ footer {
     font-size: 1.4rem;
     border: 1px solid #000;
     visibility: visible;
+
+  }
+
+  .mobile-header-btn a {
+    color: #000;
+    text-decoration: none;
   }
 
   .menu-expanded.active {
-    background-image: url("images/menu-expanded-mobile.jpg");
+    background-image:none;
+    background-color: rgb(232, 225, 185);
+    box-shadow:inset 0px 0px 20px 5px rgba(151, 83, 14, .7);
   }
 
   .menu-expanded.active ul {
@@ -649,7 +656,7 @@ footer {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .header-section {
@@ -679,7 +686,7 @@ footer {
   }
 
   .full-inner-box h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 10px;
   }
 
@@ -688,7 +695,7 @@ footer {
   }
 
   .full-inner-box p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .x-row.rumination {
@@ -716,9 +723,14 @@ footer {
     width: 300px;
   }
 
+  .half-text {
+    width: 100%;
+    padding: 10px;
+  }
+
   .perennial-container p,
   .what-we-know-container p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .intersect-rect-2 {

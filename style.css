@@ -7,6 +7,10 @@
   font-family: Lora, "Times New Roman", Times, serif;
 }
 
+body {
+  background-color: #1e1e1e;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -171,6 +175,10 @@ hr.style-eight:after {
 
 .header-content img {
   width: 100%;
+}
+
+.mobile-header-btn {
+  visibility: hidden;
 }
 
 /*** THE GOLDEN HOUR ***/
@@ -385,6 +393,9 @@ hr.style-eight:after {
 }
 
 /*** ASSOCIATED ACTS ***/
+#associated-acts {
+  background-color: #fff;
+}
 .associated-acts {
   text-align: center;
   padding: 20px;
@@ -514,6 +525,11 @@ hr.style-eight:after {
   flex-direction: column;
 }
 
+input {
+  padding: 6px;
+  font-size: 1rem;
+}
+
 /*** FOOTER STYLES ***/
 footer {
   color: #fff;
@@ -572,7 +588,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   .header-section {
-    height: 75vh;
+    height: 100vh;
   }
 
   .header-content {
@@ -611,14 +627,27 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1024px){
-
-}
-
 @media only screen and (max-width: 768px) {
   .hamburger-container {
-    top: 20px;
+    top: 10px;
     right: 10px;
+  }
+
+  .mobile-header-btn {
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #000;
+    visibility: visible;
+  }
+
+  .menu-expanded.active {
+    background-image: url('images/menu-expanded-mobile.jpg');
+  }
+
+  .menu-expanded.active ul {
+    margin-top: 50px;
   }
 
   h1 {
@@ -626,7 +655,7 @@ footer {
   }
 
   .header-section {
-    height: 75vh;
+    height: 100vh;
   }
 
   .header-content {

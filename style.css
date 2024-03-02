@@ -589,7 +589,8 @@ footer {
 @media only screen and (max-width: 1024px) {
   .header-section {
     background-image: url('images/quality-40.jpg');
-    background-size: cover !important;
+    background-size:cover ;
+    -webkit-background-size: cover;
     height: 100vh;
   }
 

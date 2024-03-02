@@ -416,10 +416,6 @@ hr.style-eight:after {
   transition: opacity 0.5s ease;
 }
 
-/* .half-image-2 {
-  filter: brightness(0%);
-} */
-
 .show {
   opacity: 1;
 }
@@ -585,7 +581,7 @@ footer {
 @media only screen and (max-width: 1024px) {
   .header-section {
     background-image: url("images/quality-40.jpg");
-    background-attachment: scroll;
+    background-attachment: scroll; /*no browser support for background-attachment: fixed; */
     height: 100vh;
   }
 
@@ -637,7 +633,6 @@ footer {
     font-size: 1.4rem;
     border: 1px solid #000;
     visibility: visible;
-
   }
 
   .mobile-header-btn a {

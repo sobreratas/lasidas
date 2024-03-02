@@ -538,7 +538,6 @@ footer {
   align-items: center;
   gap: 12px;
   padding: 35px;
-  
 }
 
 .footer-inner-container {
@@ -547,12 +546,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .footer-logo {
- width: 100px;
-
+  width: 100px;
 }
 
 .social-icons-container i {
@@ -577,20 +574,20 @@ footer {
 }
 
 .footer-inner-container p {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .footer-inner-container a {
   text-decoration: none;
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .header-section {
-    background-image: url('images/quality-40.jpg');
-    background-size:cover ;
-    -webkit-background-size: cover;
+    background-image: url("images/quality-40.jpg");
+    background-position: top;
+    background-size: auto 100vh;
     height: 100vh;
   }
 
@@ -610,7 +607,7 @@ footer {
   .header-content img {
     width: 80%;
   }
-  
+
   .mosaic-top-container img {
     max-width: 400px;
   }
@@ -625,7 +622,7 @@ footer {
 
   .perennial-container p,
   .what-we-know-container p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -645,7 +642,7 @@ footer {
   }
 
   .menu-expanded.active {
-    background-image: url('images/menu-expanded-mobile.jpg');
+    background-image: url("images/menu-expanded-mobile.jpg");
   }
 
   .menu-expanded.active ul {
@@ -722,7 +719,7 @@ footer {
 
   .perennial-container p,
   .what-we-know-container p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   .intersect-rect-2 {
@@ -740,7 +737,7 @@ footer {
 
   .copyright-container {
     margin-top: 8px;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   footer {
@@ -751,5 +748,4 @@ footer {
   .footer-inner-container {
     align-items: center;
   }
-
 }

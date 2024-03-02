@@ -588,7 +588,9 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   .header-section {
-    background-size: auto;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     height: 100vh;
   }
 

@@ -586,8 +586,7 @@ footer {
 @media only screen and (max-width: 1024px) {
   .header-section {
     background-image: url("images/quality-40.jpg");
-    background-position: top;
-    background-size: auto 100vh;
+    background-attachment: scroll;
     height: 100vh;
   }
 

@@ -105,7 +105,7 @@ hr.style-eight:after {
   right: 0;
   bottom: 0;
   z-index: -111;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .menu-expanded img {
@@ -126,6 +126,7 @@ hr.style-eight:after {
 .menu-expanded ul li {
   list-style: none;
   margin: 20px;
+  font-weight: 600;
 }
 
 .menu-expanded ul li a {
@@ -177,6 +178,7 @@ hr.style-eight:after {
 }
 
 .mobile-header-btn {
+  font-weight: 800;
   visibility: hidden;
 }
 
@@ -189,7 +191,7 @@ hr.style-eight:after {
   background-repeat: no-repeat;
   line-height: 1.5;
   padding: 20px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .box {
@@ -216,7 +218,7 @@ hr.style-eight:after {
   background-size: cover;
   background-repeat: no-repeat;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .full-box {
@@ -253,7 +255,7 @@ hr.style-eight:after {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .mosaic-top-container {
@@ -323,6 +325,7 @@ hr.style-eight:after {
   flex-direction: column;
   color: #fff;
   gap: 10px;
+  font-weight: 800;
 }
 
 .half-text a {
@@ -489,6 +492,7 @@ hr.style-eight:after {
   color: #fff;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   align-items: center;
 }
 
@@ -504,6 +508,11 @@ hr.style-eight:after {
   padding: 40px;
 }
 
+.contact-container form input {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
 .contact-container form button {
   width: 150px;
   display: block;
@@ -511,8 +520,9 @@ hr.style-eight:after {
   background-color: transparent;
   color: #fff;
   padding: 12px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border: 2px solid #fff;
+  font-weight: 800;
 }
 
 .label-input-container {

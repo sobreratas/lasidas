@@ -156,7 +156,6 @@ hr.style-eight:after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
   position: relative;
 }
@@ -254,6 +253,7 @@ hr.style-eight:after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+    background-attachment: fixed;
   color: #fff;
   font-weight: 800;
 }

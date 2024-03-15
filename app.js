@@ -1,3 +1,10 @@
+const headerSection = document.querySelector(".header-section");
+
+window.addEventListener("scroll", ()=> {
+  let offset = window.scrollY;
+  headerSection.style.backgroundPositionY = offset * 0.2 + 'px';
+})
+
 function changeHamburgerBackground() {
   const hamburger = document.querySelector(".hamburger-container");
   let scrollValue = window.scrollY;

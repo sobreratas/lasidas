@@ -181,6 +181,23 @@ hr.style-eight:after {
   visibility: hidden;
 }
 
+.astrocene-container {
+  background-color: #1e1e1e;
+}
+
+.astrocene-box {
+  width: 60%;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+@media only screen and (max-width: 600px){
+  .astrocene-box {
+    width: 90%;
+
+  }
+}
+
 /*** THE GOLDEN HOUR ***/
 .golden-hour-container {
   background-image: url("images/sunset.png");
